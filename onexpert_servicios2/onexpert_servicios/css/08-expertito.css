@@ -1,0 +1,90 @@
+.expertito {
+  --tinta: #26237E;
+  --lado: clamp(176px, 21.4vw, 275px);   
+  margin: 0;
+  width: var(--lado);
+  flex: none;
+}
+.expertito__nota {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  rotate: -3deg;
+  color: var(--tinta);
+}
+.expertito__papel {
+  position: absolute;
+  inset: 0;
+  border-radius: 2px 2px 3px 18px / 2px 2px 3px 14px;
+  background:
+    var(--grano),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 24%),
+    linear-gradient(200deg, rgba(0, 0, 0, 0) 70%, rgba(120, 90, 0, 0.16) 100%),
+    linear-gradient(165deg, var(--postit-claro, #FFF59D) 0%, var(--postit-medio, #FFEB6B) 55%, var(--postit-base, #F7DA4E) 100%);
+  background-size: 160px 160px, auto, auto, auto;
+  background-blend-mode: multiply, normal, normal, normal;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 28px 40px -22px rgba(0, 0, 0, 0.75),
+    0 6px 12px -6px rgba(0, 0, 0, 0.45);
+}
+.expertito__papel::after {               
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 22%;
+  height: 16%;
+  border-bottom-left-radius: 100% 90%;
+  background: linear-gradient(35deg, rgba(120, 90, 0, 0.22), rgba(0, 0, 0, 0) 60%);
+}
+.expertito__contorno {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: none;
+  stroke: var(--tinta);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  opacity: 0;
+}
+.expertito__cara {
+  position: absolute;
+  left: 13%;                               
+  top: 17%;
+  width: 74%;
+  height: auto;
+  overflow: visible;
+}
+.expertito__texto {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 7%;
+  font-family: var(--fuente-firma);
+  font-size: clamp(1.05rem, 0.8rem + 0.8vw, 1.45rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--tinta);
+  rotate: -1.5deg;
+}
+.expertito__parpado { transform-box: fill-box; transform-origin: 50% 50%; }
+.expertito__rayado { pointer-events: none; }
+.guias-intro {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  margin-bottom: var(--cabeza-y, 48px);
+}
+.guias-intro .cabeza { margin-bottom: 0; }
+@media (max-width: 760px) {
+  .guias-intro { grid-template-columns: 1fr; justify-items: center; text-align: left; }
+  .guias-intro .cabeza { justify-self: stretch; }
+  .expertito { --lado: min(54vw, 214px); }
+}

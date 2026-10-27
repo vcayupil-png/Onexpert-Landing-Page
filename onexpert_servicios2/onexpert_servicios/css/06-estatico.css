@@ -1,0 +1,50 @@
+html { scroll-behavior: auto; }
+*, *::before, *::after {
+  animation: none !important;
+  transition: none !important;
+}
+.boton:hover,
+.caja:hover,
+.lectura:hover,
+.guia-tarjeta:hover,
+.compartir__red:hover { transform: none; }
+.boton:hover svg,
+.boton--cita:hover svg.boton__icono,
+.panel-menu__cruce:hover svg,
+.lectura__enlace:hover svg,
+.guia-tarjeta:hover .guia-tarjeta__leer svg,
+.mosaico__tarjeta:hover .mosaico__icono { transform: none; }
+.boton:hover .boton__texto::after { transform: none; }
+.boton--cita:hover::before { transform: none; }
+.pie__correo:hover .pie__icono { transform: none; }
+.figura-forma:hover .foto-forma > img,
+.cara:hover .cara__foto img,
+.cara--sobresale:hover .cara__foto--sobresale img,
+.panel-h:hover .panel-h__foto img,
+.mosaico__tarjeta:hover .mosaico__foto img,
+.lectura:hover .lectura__foto img,
+.guia-destacada:hover .guia-destacada__foto img,
+.guia-tarjeta:hover .guia-tarjeta__foto img { transform: none; }
+.postit, .postit:hover { transform: rotate(var(--postit-giro, 0deg)); }
+.postit__subrayado { display: block; width: 78%; height: 12px; margin-top: 0.35rem; overflow: visible; color: var(--postit-rotulo); }
+.postit__subrayado path { fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
+.anim-doc__check { stroke-dashoffset: 0; }
+.mi-reporte__dato { opacity: 1; }
+.mi-tecno__dato { opacity: 0; }
+.apilada { position: relative; top: auto !important; }
+.expertito__contorno { display: none; }   
+.cabecera__progreso { display: none; }
+.pie__textura img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.26;
+  mix-blend-mode: screen;
+}
+@media print {
+  .pie__textura { display: none; }
+  .postit { box-shadow: none; border: 1px solid #C9B23A; }
+  .cita__comillas { opacity: 0.08; }
+}

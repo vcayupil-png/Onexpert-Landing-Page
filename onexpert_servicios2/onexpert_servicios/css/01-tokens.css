@@ -1,0 +1,69 @@
+:root {
+  --navy:               #152838;
+  --navy-profundo:      #0B1822;   
+  --grafito:            #323333;
+  --gris-texto:         #55666E;
+  --blanco:             #FFFFFF;
+  --texto:              #E6EDF0;   
+  --texto-suave:        #BFCCD2;   
+  --claro-sobre-oscuro: #E6EDF0;   
+  --acento:           #F9A992;   
+  --acento-fuerte:    #F67055;   
+  --acento-texto-btn: #0B1822;
+  --acento-frase:     #F9A992;   
+  --acento-rgb:       246, 112, 85;
+  --amarillo-rgb:     255, 214, 90;   
+  --aurora-1: rgba(74, 95, 114, 0.7);     
+  --aurora-2: rgba(246, 112, 85, 0.2);    
+  --aurora-3: rgba(238, 218, 206, 0.12);  
+  --aurora-4: rgba(60, 78, 94, 0.6);
+  --tinte-1: rgba(238, 218, 206, 0.12);
+  --tinte-2: rgba(74, 95, 114, 0.3);
+  --tinte-3: rgba(246, 112, 85, 0.12);
+  --tinte-4: rgba(211, 218, 224, 0.1);
+  --vidrio:            rgba(15, 30, 42, 0.5);     
+  --vidrio-fuerte:     rgba(15, 30, 42, 0.68);    
+  --vidrio-brillo:     rgba(255, 255, 255, 0.07);
+  --vidrio-borde:      rgba(255, 255, 255, 0.16);
+  --vidrio-desenfoque: 24px;
+  --vidrio-saturacion: 170%;
+  --bisel:             1;
+  --grano: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .32 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --acanalado: repeating-linear-gradient(90deg,
+      rgba(255, 255, 255, 0.07) 0 1px,
+      rgba(255, 255, 255, 0.015) 1px 5px,
+      rgba(0, 0, 0, 0.16) 7px 8px,
+      rgba(255, 255, 255, 0) 8px 12px);
+  --postit-claro:  #FFF59D;
+  --postit-medio:  #FFEB6B;
+  --postit-base:   #F7DA4E;
+  --postit-doblez: rgba(120, 90, 0, 0.2);
+  --postit-texto:  #3A3216;
+  --postit-tinta:  #1F1A0A;
+  --postit-rotulo: #7A5A00;
+  --fuente:        "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fuente-mano:   "Handlee", "Caveat", cursive;
+  --fuente-firma:  "Caveat", "Handlee", cursive;
+  --fs-h1:           clamp(1.9rem, 1.25rem + 2.1vw, 2.85rem);
+  --fs-h2:           clamp(1.7rem, 1.2rem + 1.6vw, 2.45rem);
+  --fs-h2-sub:       clamp(1.5rem, 1.1rem + 1.15vw, 2.05rem);
+  --fs-h3-grande:    clamp(1.25rem, 1.04rem + 0.7vw, 1.65rem);
+  --fs-h3:           clamp(1.08rem, 1rem + 0.25vw, 1.2rem);
+  --fs-bajada:       clamp(1rem, 0.95rem + 0.25vw, 1.12rem);
+  --fs-cuerpo-chico: 0.95rem;
+  --ancho-max:   1200px;
+  --margen:      clamp(20px, 5vw, 56px);
+  --radio:       24px;
+  --radio-chico: 14px;
+  --pildora:     999px;
+  --seccion-y:   clamp(72px, 8vw, 116px);
+  --bloque-y:    clamp(40px, 4.5vw, 64px);
+  --cabeza-y:    clamp(32px, 4vw, 52px);
+  --fundido:     clamp(80px, 8vw, 128px);
+  --alto-cabecera: 100px;   
+  --curva:    cubic-bezier(0.16, 1, 0.3, 1);
+  --resorte:  cubic-bezier(0.34, 1.56, 0.64, 1);   
+  --t-rapido: 200ms;
+  --t-medio:  450ms;
+  --t-lento:  900ms;
+}
